@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Фотографы</title>
+
+	<!-- Нормализация стилей -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+	<!-- Собственные стили -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<!-- Подключение веб-шрифтов -->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bad+Script|Caveat|Jura|Marck+Script" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/png" href="img/icon.png">
+	
+</head>
+<body>
+	<a name="next"></a>
+	<div class="header1">
+		<div class="header-section">
+			<div class="header-logo">Известные фотографы</div>
+		</div>
+		<div class="header-section">
+			<div class="header-button"><a href="index.html">Главная</a></div>
+			<div class="header-button"><a href="timetapeOfphoto.html">История</a></div>
+			<div class="header-button"><a href="famousphotos.html">Известные фотографии</a></div>
+			<div class="header-button"><a href="modernPhotography.html">Современное искусство съемки</a></div>
+		</div>
+	</div>
+	<div class="main-block">
+		<div class="container" > 
+			<div class="gallery">
+				{PHOTOS}
+				<div ><a href="http://thebecker.net" target="_blank"><h2><span>Becker</span></h2></a>
+					<img src="img/photograph1.jpg"/></div>
+				<div ><a href="http://www.photoindustria.ru/?mod=content&id=142" target="_blank"><h2><span>Энни Лейбовиц</span></h2></a>
+					<img src="img/photograph2.jpg"></div>
+				<div><a href="http://www.sethresnick.com" target="_blank"><h2><span>Seth Resnick</span></h2></a>
+					<img src="img/photograph3.jpg"></div>
+				<div><a href="https://rosphoto.com/portfolio/sebastyan_salgado-1990" target="_blank"><h2><span>Sebastiao Salgado</span></h2></a>
+					<img src="img/photograph4.jpg"></div>
+				<div><a href="http://jasminestar.com" target="_blank"><h2><span>Jasmine Star</span></h2></a>
+					<img src="img/photograph5.jpg"></div>
+				<div><a href="http://www.jaymaisel.com" target="_blank"><h2><span>Jay Maisel</span></h2></a>
+					<img src="img/photograph6.jpg"/></div>
+				<div><a href="https://portfolio.joemcnally.com/index" target="_blank"><h2><span>Joe Mc Nally</span></h2></a>
+					<img src="img/photograph7.jpg"></div>
+				<div><a href="https://rosphoto.com/portfolio/chase_jarvis-1339" target="_blank"><h2><span>Сhase Jarvis</span></h2></a>
+					<img src="img/photograph10.jpg"></div>
+				<div><a href="http://www.danesanders.com" target="_blank"><h2><span>Dane Sanders</span></h2></a>
+					<img src="img/photograph11.jpg"></div>
+				<div><a href="https://www.irvingpenn.org" target="_blank"><h2><span>Irving Penn</span></h2></a>
+					<img src="img/photograph12.jpg"></div>
+				<div><a href="http://home.davidlachapelle.com" target="_blank"><h2><span>David LaChapelle</span></h2></a>
+					<img src="img/photograph13.jpg"></div>
+				<div><a href="https://www.artsy.net/artist/robert-frank" target="_blank"><h2><span>Robert Frank</span></h2></a>
+					<img src="img/photograph14.jpg"></div>
+				<div><a href="http://www.maryellenmark.com" target="_blank"><h2><span>Mary Ellen Mark</span></h2></a>
+					<img src="img/photograph15.jpg"></div>
+				<div><a href="https://edkashi.com" target="_blank"><h2><span>Ed Kashi</span></h2></a>
+					<img src="img/photograph18.jpg"></div>
+				<div><a href="http://home.davidlachapelle.com" target="_blank"><h2><span>David LaChapelle</span></h2></a>
+					<img src="img/photograph19.jpg"></div>
+			</div>
+		</div>
+	</div>
+	<!--<div class="footer" style="padding: 10px;">
+		<div class="container">
+			<div class="row" >
+				<form action="photographers.php" method="post"  enctype="multipart/form-data">
+					<div>Выбрать картинку: <input type="file" name="upload" value="Выбрать картинку">
+						Введите имя фотографа: <input type="text" name="photographerName">
+						Cсылка на сайт-портфолио: <input type="text" name="getLink">
+					</div>
+					<div>
+						<div style="display: flex; justify-content: space-between; padding-top: 20px;">
+							<input type="submit" name="AddBtn" value="Добавить">
+							<div>
+								Введите имя фотографа: <input type="text" name="PhotoNameToDel"><input type="submit" name="DeleteBtn" value="Удалить">	
+							</div>
+							<div>
+								Введите имя фотографа: <input type="text" name="RenamePhotoName"><input type="submit" name="RenamePhotoBtn" value="Изменить имя фотографа">		
+							</div>
+							
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr>
+	</div>-->
+
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="column3">
+					<p>Разработчик: студентка БГУИР</p>
+					<p class="footer-name">Татьяна Бертош</p>
+					<p>Мои профили в социальных сетях</p>
+					<p class="footer-social-icons">
+						<a href="https://vk.com/id86253598" target="_blank" alt="vk.com/id86253598"><i class="fab fa-vk" area-hidden="true"></i></a>
+						<a href="https://www.instagram.com/tai_bertosh" target="_blank" alt="tai_bertosh"><i class="fab fa-instagram"></i></a>
+
+					</p>
+
+				</div>
+
+				<div class="column3">
+					<p class="footer-text"> Печать принта</p>
+					<p> <a href="http://localhost/laba6/laba6.php" class="button-back">Оформить заказ&rarr;</a></p>
+					<p class="footer-text">Идеи и контент для сайта был взят с ресурсов 
+						<div class="footer-resources">
+							<div class="footer-resources-row">
+								<div class="footer-resources-items">
+									<a href="https://photo-monster.ru/books/read/istoriya-fotografii-chast-1-nachalo.html" target="_blank"><img src="img/photo-monster-ru.png" width="60" height="70" alt="photo-monster.ru"></a>
+								</div>
+								<div class="footer-resources-items">
+									<a href="https://asaratov.livejournal.com/3903895.html" target="_blank"><img src="img/asaratov.gif" width="60" height="70" alt="asaratov.livejournal.com"></a>
+								</div>
+								<div class="footer-resources-items">
+									<a href="http://www.alexeynikishin.ru/articles/sovremennaya-fotografya.html" target="_blank"><img src="img/nikulin-oficial.png" width="65" height="50" alt="alexeynikishin.ru"></a>
+								</div>
+								<div class="footer-resources-items">
+									<a href="https://cameralabs.org/vdochnovenie/mastera-fotografii" target="_blank"><img src="img/Cameralabs.png" width="65" height="50" alt="cameralabs.org"></a>
+								</div>
+
+							</div>
+
+						</div>
+					</p>
+					
+				</div>
+
+				<div class="column3">
+					<p class="footer-text"> Подборка ресурсов для вдохновления фотографией </p>
+					<p> <a href="photographers.html" class="button-back">Подробнее&rarr;</a></p>
+					<!--<p class="footer-text"> Доставка фотографий</p>
+					<p> <a href="http://localhost/laba3/laba3.php" class="button-back">Заказать&rarr;</a></p>-->
+				</div>
+
+			</div>
+
+		</div>
+		<p class="footer-upbutton"><a class="button-back" href="#next">Наверх</a></p>
+		
+	</div>
+
+</body>
+</html>

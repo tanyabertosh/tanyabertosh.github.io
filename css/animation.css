@@ -1,0 +1,236 @@
+/*........................
+GALLERY PAGE
+.........................*/
+
+.gallery {
+	padding: .5vw;
+	font-size: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-flow: row wrap;
+	color: #333;
+	border: 2px dotted #333;
+	border-radius: 15px;
+}
+
+.gallery h2{
+	width: 100%;
+	color: #fff;
+	margin: 0;
+	display: none;
+	
+}
+
+.gallery h2 span {
+	color			: white;
+	font			: 24px/45px Helvetica, Sans-Serif;
+	letter-spacing		: -1px;
+	background		: rgb(0, 0, 0); /* на случай, если следующая строка не сработает */
+	background		: rgba(0, 0, 0, 0.7);
+	padding			: 10px;
+}
+
+.gallery div:hover h2 {
+	display: block;
+}
+
+.gallery div {
+	flex:auto;
+	width: 237px;
+	height: 200px;
+	margin: .5vw;
+
+	
+}
+
+.gallery div img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	
+}
+
+.gallery:hover img{
+	opacity: 1;
+	transition: .8s opacity;
+
+}
+
+.gallery:hover img:hover{
+	opacity: 0.3;
+	transition: .8s opacity;
+}
+
+
+
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+    position: relative;
+    height: 85vh;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+	transition: opacity 1s;
+
+
+}
+
+.showing{
+    opacity: 1;
+    z-index: 2;
+
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+    font-size: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+
+.slide:nth-of-type(1){
+    background: #333;
+    background-image: url("../img/camera.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+.slide:nth-of-type(2){
+    background: #333;
+    background-image: url("../img/photo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(3){
+    background: #333;
+    background-image: url("../img/photo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(4){
+    background: #333;
+    background-image: url("../img/photo4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slide:nth-of-type(5){
+    background: #333;
+    background-image: url("../img/photo5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.header-title {
+	animation-name: slide-down;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-timing-function: linear; 
+	visibility: visible !important; 	
+}
+
+.header-includes {
+	animation-name: slide-up;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-timing-function: linear; 
+	visibility: visible !important; 
+}
+
+.column3 .button-back:hover {
+	animation-name: rubberBand;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+}
+
+.footer-upbutton a:hover {
+	animation-name: wobble;
+	animation-duration: 2s;
+  	animation-timing-function: linear;
+}
+
+@keyframes slide-down {
+	0% {
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(15%);
+    }
+    85%{
+        transform: translateY(11%);
+    }
+    99% {
+        transform: translateY(5%);
+    } 
+    100% {
+        transform: translateY(0%);
+    }      
+}
+
+@keyframes slide-up {
+	0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(15%);
+    }
+    85%{
+        transform: translateY(11%);
+    }
+    99% {
+        transform: translateY(5%);
+    } 
+    100%{
+        transform: translateY(0%);
+    }            
+         
+}
+
+@keyframes wobble {
+	0% {transform: translateX(0%);}
+    15% {transform: translateX(-25%) rotate(-5deg);}
+  	30% {transform: translateX(20%) rotate(3deg);}
+  	45% {transform: translateX(-15%) rotate(-3deg);}
+  	60% {transform: translateX(10%) rotate(2deg);}
+  	75% {transform: translateX(-5%) rotate(-1deg);}
+  	100% {transform: translateX(0%);}
+
+}
+
+
+
+@keyframes rubberBand {
+  	0% {transform: scale(1);}
+  	30% {transform: scaleX(1.15) scaleY(0.75);}
+  	40% {transform: scaleX(0.75) scaleY(1.25);}
+  	60% {transform: scaleX(1.15) scaleY(0.85);}
+  	100% {transform: scale(1);}
+ 
+}
+
+
+
+
